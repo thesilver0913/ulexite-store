@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "apps": [
+    {
+      "id": "clock",
+      "package": "vrc.ulexite.app.clock",
+      "official": true,
+      "author": "Ulexite",
+      "name": {
+        "ja": "時計",
+        "en": "Clock"
+      },
+      "summary": {
+        "ja": "世界時計・タイマー・ストップウォッチ",
+        "en": "World clock, timer and stopwatch"
+      },
+      "description": {
+        "ja": "昼と夜がわかる世界地図つきの世界時計と、インスタンスの全員で使えるタイマー・ストップウォッチ。タイマーは閉じていても動き続け、終わると全員に知らせます。",
+        "en": "A world clock with a day/night map, plus a timer and stopwatch shared with everyone in the instance. The timer keeps running in the background and notifies everyone when it finishes."
+      },
+      "credits": {
+        "ja": "地図：Natural Earth",
+        "en": "Map: Natural Earth"
+      },
+      "color": "#3a3550",
+      "icon": "clock",
+      "quest": "yes",
+      "imageLoading": "none",
+      "minUlexite": "0.1.0",
+      "version": "0.1.0",
+      "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.clock-0.1.0/vrc.ulexite.app.clock-0.1.0.zip",
+      "sha256": "ca6b6c78fb9266a87aac351fb87504d266d4d6bb9b169c04a449919a219610dc"
+    }
+  ]
+}
