@@ -27,9 +27,9 @@
       "quest": "yes",
       "imageLoading": "none",
       "minUlexite": "0.1.0",
-      "version": "0.1.0",
-      "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.clock-0.1.0/vrc.ulexite.app.clock-0.1.0.zip",
-      "sha256": "ca6b6c78fb9266a87aac351fb87504d266d4d6bb9b169c04a449919a219610dc"
+      "version": "0.1.1",
+      "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.clock-0.1.1/vrc.ulexite.app.clock-0.1.1.zip",
+      "sha256": "8374349dc15637c799b08c5f0c1c2bbd579d2ecd18ace87be3280ec9cffc1716"
     }
   ]
 }
