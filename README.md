@@ -1,6 +1,6 @@
 # ulexite-store
 
-[Ulexite Player](https://thesilver0913.github.io/ulexite-catalog/)（VRChat ワールド向けのテレビ）のアプリストアのカタログと配布物です。
+[Ulexite TV](https://thesilver0913.github.io/ulexite-catalog/)（VRChat ワールド向けのテレビ）のアプリストアのカタログと配布物です。
 
 - **カタログ**：https://thesilver0913.github.io/ulexite-store/v1/store.json
 - **配布物**：各アプリの zip は [Releases](https://github.com/thesilver0913/ulexite-store/releases)
@@ -20,7 +20,7 @@ Unity の「Ulexite 設定」ウィンドウのアプリストアがカタログ
 | `apps[].color` / `icon` | タイルの色と、アイコンの名前 |
 | `apps[].quest` | Quest 対応（`yes`・`no`・`check`） |
 | `apps[].imageLoading` | 画像の読み込みの量の目安（`none`・`low`・`high`） |
-| `apps[].minUlexite` | 必要な Ulexite Player の版 |
+| `apps[].minUlexite` | 必要な Ulexite TV の版 |
 | `apps[].version` / `url` / `sha256` | 審査した版と、その zip の場所と SHA-256 |
 
 ## 掲載の流れ
