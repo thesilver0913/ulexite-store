@@ -1,6 +1,6 @@
 """
 アプリのパッケージを配布用の zip にし、カタログ（v1/store.json）のそのアプリの項目を書き換える。
-バージョン・URL・SHA-256 に加えて、アプリの証明書（パッケージ直下の ulexite-app.json）から名前・作者・必要な OS と App Services のバージョン・
+バージョン・URL・SHA-256 に加えて、アプリのマニフェスト（パッケージ直下の ulexite-app.json）から名前・作者・必要な OS と App Services のバージョン・
 対応する端末・リリースノート・カテゴリを写す（二重に書かない）。
 
   python tools/pack.py <パッケージのフォルダ> [--out dist]
@@ -30,10 +30,10 @@ def check_compiled(src):
 
 
 def load_certificate(src, meta):
-    """アプリの証明書を読み、package.json と食い違っていたら止める（package.json が正）。"""
+    """アプリのマニフェストを読み、package.json と食い違っていたら止める（package.json が正）。"""
     path = os.path.join(src, "ulexite-app.json")
     if not os.path.exists(path):
-        sys.exit("ulexite-app.json（アプリの証明書）がありません")
+        sys.exit("ulexite-app.json（アプリのマニフェスト）がありません")
     cert = json.load(open(path, encoding="utf-8"))
     if cert.get("version") != meta["version"]:
         sys.exit(f"ulexite-app.json の version（{cert.get('version')}）が package.json（{meta['version']}）と違います")
