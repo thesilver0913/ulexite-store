@@ -80,6 +80,8 @@ def main():
         sys.exit(f"カタログの id（{entry['id']}）と ulexite-app.json の id（{cert['id']}）が違います")
     world = (cert.get("runtimes") or {}).get("world") or {}
     entry["name"] = cert["name"]
+    if (cert.get("publisher") or {}).get("name"):
+        entry["author"] = cert["publisher"]["name"]
     entry["os"] = world.get("os", 1)
     entry["appServices"] = world.get("appServices", 1)
     entry["profiles"] = cert.get("profiles", [])
