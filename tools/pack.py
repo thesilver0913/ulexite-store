@@ -1,12 +1,14 @@
 """
-アプリのパッケージを配布用の zip にし、カタログ（v1/store.json）のそのアプリの版・URL・SHA-256 を書き換える。
+アプリのパッケージを配布用の zip にし、カタログ（v1/store.json）のそのアプリの項目を書き換える。
+バージョン・URL・SHA-256 に加えて、アプリの証明書（パッケージ直下の ulexite-app.json）から名前・作者・必要な OS と App Services のバージョン・
+対応する端末・リリースノート・カテゴリを写す（二重に書かない）。
 
   python tools/pack.py <パッケージのフォルダ> [--out dist]
 
 zip の中身はパッケージのフォルダの中身そのもの（package.json が zip の直下。VPM と同じ形）。
-できた zip は GitHub の Releases に「<パッケージ名>-<版>」のタグで上げる（URL はそれを前提に書く）。
+できた zip は GitHub の Releases に「<パッケージ名>-<バージョン>」のタグで上げる（URL はそれを前提に書く）。
 """
-import argparse, hashlib, json, os, sys, zipfile
+import argparse, hashlib, json, os, re, sys, zipfile
 from collections import OrderedDict
 
 REPO = "thesilver0913/ulexite-store"
@@ -25,6 +27,21 @@ def check_compiled(src):
                     stale.append(os.path.relpath(os.path.join(base, f), src))
     if stale:
         sys.exit("U# のプログラムアセットが古いままです（Unity でコンパイルしてから固めてください）：" + ", ".join(stale))
+
+
+def load_certificate(src, meta):
+    """アプリの証明書を読み、package.json と食い違っていたら止める（package.json が正）。"""
+    path = os.path.join(src, "ulexite-app.json")
+    if not os.path.exists(path):
+        sys.exit("ulexite-app.json（アプリの証明書）がありません")
+    cert = json.load(open(path, encoding="utf-8"))
+    if cert.get("version") != meta["version"]:
+        sys.exit(f"ulexite-app.json の version（{cert.get('version')}）が package.json（{meta['version']}）と違います")
+    if not re.match(r"^[a-z0-9][a-z0-9-]{0,31}$", cert.get("id") or ""):
+        sys.exit(f"ulexite-app.json の id の形が違います（{cert.get('id')}）")
+    if "tv" not in (cert.get("profiles") or []):
+        print("注意：profiles に tv がないので、テレビには組み込まれません")
+    return cert
 
 
 def pack(src, out_dir):
@@ -53,11 +70,23 @@ def main():
     ap.add_argument("--out", default=os.path.join(ROOT, "dist"))
     a = ap.parse_args()
     check_compiled(a.package)
+    cert = load_certificate(a.package, json.load(open(os.path.join(a.package, "package.json"), encoding="utf-8")))
     name, version, zip_path, sha = pack(a.package, a.out)
     catalog = json.load(open(CATALOG, encoding="utf-8"), object_pairs_hook=OrderedDict)
     entry = next((e for e in catalog["apps"] if e["package"] == name), None)
     if entry is None:
         sys.exit(f"カタログに {name} がありません。先に v1/store.json に項目を足してください")
+    if entry["id"] != cert["id"]:
+        sys.exit(f"カタログの id（{entry['id']}）と ulexite-app.json の id（{cert['id']}）が違います")
+    world = (cert.get("runtimes") or {}).get("world") or {}
+    entry["name"] = cert["name"]
+    entry["os"] = world.get("os", 1)
+    entry["appServices"] = world.get("appServices", 1)
+    entry["profiles"] = cert.get("profiles", [])
+    if cert.get("releaseNotes"):
+        entry["releaseNotes"] = cert["releaseNotes"]
+    if cert.get("category"):
+        entry["category"] = cert["category"]
     entry["version"] = version
     entry["url"] = f"https://github.com/{REPO}/releases/download/{name}-{version}/{os.path.basename(zip_path)}"
     entry["sha256"] = sha
