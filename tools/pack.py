@@ -89,6 +89,8 @@ def main():
         entry["releaseNotes"] = cert["releaseNotes"]
     if cert.get("category"):
         entry["category"] = cert["category"]
+    if cert.get("pricing"):
+        entry["pricing"] = cert["pricing"]  # 有料アプリ：販売元と購入ページ（Ulexite はお金を扱わない）
     entry["version"] = version
     entry["url"] = f"https://github.com/{REPO}/releases/download/{name}-{version}/{os.path.basename(zip_path)}"
     entry["sha256"] = sha
