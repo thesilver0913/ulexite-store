@@ -23,6 +23,14 @@ Unity の「Ulexite 設定」ウィンドウのアプリストアがカタログ
 | `apps[].minUlexite` | 必要な Ulexite TV の版 |
 | `apps[].version` / `url` / `sha256` | 審査した版と、その zip の場所と SHA-256 |
 
+## 製品の紹介（v1/products/）
+
+Ulexite Store の製品の横に置く小さな画面（製品紹介アプリ）が読む JSON です。アプリのパッケージ（`vrc.ulexite.app.productintro`）の `Data/products/<id>.json` と同じものを置いています。
+
+- `v1/products/tv.json`：Ulexite（テレビ本体）の紹介。`product` に名前・ひとこと・価格の行・タブ3つ・特長・仕様・くらべる・入手方法（`how.url` と QR コードの元）
+- 入手先の URL（BOOTH／VCC）が決まったら、`product.how.url` を書き換えて、アプリの `Textures/qr.png` も差し替える（アプリ側は作り直す）
+- 形の版は `version`（今は 1）。読む側は知らない項目を無視する
+
 ## 掲載の流れ
 
 1. アプリのパッケージを用意する（Ulexite の `UlexiteAppBuilder` で画面を作る形）

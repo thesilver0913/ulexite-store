@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "product": {
+    "id": "tv",
+    "name": { "ja": "Ulexite", "en": "Ulexite" },
+    "nameSuffix": { "ja": "TV", "en": "TV" },
+    "tagline": {
+      "ja": "ワールドのテレビを、アプリで広がるテレビに。",
+      "en": "The TV in your world, with room to grow."
+    },
+    "priceLine": {
+      "ja": "無料・VCC からすぐ入れられます",
+      "en": "Free — install it from VCC in a minute"
+    },
+    "tabs": [
+      { "ja": "特長", "en": "Features" },
+      { "ja": "仕様", "en": "Specs" },
+      { "ja": "くらべる", "en": "Compare" }
+    ],
+    "features": [
+      {
+        "title": { "ja": "アプリで広がる", "en": "Apps make it grow" },
+        "body": {
+          "ja": "動画・ライブ配信・天気・時計など。アプリストアから追加できます",
+          "en": "Video, live streams, weather, clocks and more. Add them from the store."
+        }
+      },
+      {
+        "title": { "ja": "みんなで同じ画面", "en": "One screen for everyone" },
+        "body": {
+          "ja": "リモコンを持った人が操作し、全員が同じ画面を見られます",
+          "en": "Whoever holds the remote is in control, and everyone sees the same screen."
+        }
+      },
+      {
+        "title": { "ja": "いつものテレビの操作", "en": "The controls you know" },
+        "body": {
+          "ja": "十字キーと決定だけ。初めてでも迷いません",
+          "en": "Just the arrow keys and select. Easy from the first try."
+        }
+      },
+      {
+        "title": { "ja": "置き場所を選ばない", "en": "Any screen will do" },
+        "body": {
+          "ja": "付属の画面にも、ワールドにある画面にも映せます",
+          "en": "Use the included display, or a screen already in your world."
+        }
+      }
+    ],
+    "specs": [
+      {
+        "key": { "ja": "対応環境", "en": "Devices" },
+        "value": { "ja": "PC・Quest（Android）", "en": "PC and Quest (Android)" }
+      },
+      {
+        "key": { "ja": "操作", "en": "Controls" },
+        "value": {
+          "ja": "リモコン（手に持つ・置く）、レーザー（付属の画面のみ）",
+          "en": "Remote (hold or place), laser (included display only)"
+        }
+      },
+      {
+        "key": { "ja": "再生", "en": "Playback" },
+        "value": {
+          "ja": "VizVid（YouTube・ライブ配信・直接の URL）",
+          "en": "VizVid (YouTube, live streams, direct URLs)"
+        }
+      },
+      {
+        "key": { "ja": "同期", "en": "Sync" },
+        "value": {
+          "ja": "画面の状態は全員で共有。各自の設定は自分だけ",
+          "en": "Screen state is shared; your settings stay yours."
+        }
+      },
+      {
+        "key": { "ja": "必要なもの", "en": "Requirements" },
+        "value": {
+          "ja": "VRChat SDK（ワールド）・UdonSharp・VizVid",
+          "en": "VRChat SDK (Worlds), UdonSharp, VizVid"
+        }
+      },
+      {
+        "key": { "ja": "価格", "en": "Price" },
+        "value": { "ja": "無料（[利用規約]）", "en": "Free ([terms of use])" }
+      }
+    ],
+    "compare": {
+      "columns": [
+        { "label": { "ja": "Ulexite TV", "en": "Ulexite TV" } },
+        {
+          "label": { "ja": "Ulexite Player", "en": "Ulexite Player" },
+          "note": { "ja": "開発中", "en": "In development" }
+        }
+      ],
+      "rows": [
+        {
+          "key": { "ja": "形", "en": "Form" },
+          "values": [
+            { "ja": "セットトップボックス", "en": "Set-top box" },
+            { "ja": "レコーダー（画面は持たない）", "en": "Recorder (no screen)" }
+          ]
+        },
+        {
+          "key": { "ja": "画面", "en": "Screen" },
+          "values": [
+            { "ja": "付属の画面・ワールドの画面", "en": "Included or world screen" },
+            { "ja": "つないだ画面に出す", "en": "Shows on a connected screen" }
+          ]
+        },
+        {
+          "key": { "ja": "メニュー", "en": "Menu" },
+          "values": [
+            { "ja": "ホーム（アプリの行）", "en": "Home (a row of apps)" },
+            { "ja": "横×縦のメニュー", "en": "Cross menu" }
+          ]
+        },
+        {
+          "key": { "ja": "ディスク", "en": "Disc" },
+          "values": [
+            { "ja": "—", "en": "—" },
+            { "ja": "Ulexite Disc", "en": "Ulexite Disc" }
+          ]
+        },
+        {
+          "key": { "ja": "価格", "en": "Price" },
+          "values": [
+            { "ja": "無料", "en": "Free" },
+            { "ja": "未定", "en": "TBD" }
+          ]
+        }
+      ]
+    },
+    "how": {
+      "title": { "ja": "入手方法", "en": "How to get it" },
+      "body": {
+        "ja": "スマホで読み取るか、下の URL をブラウザで開いてください",
+        "en": "Scan the code, or open the URL below in a browser."
+      },
+      "url": { "ja": "[BOOTH / VCC のリスティングの URL]", "en": "[BOOTH / VCC listing URL]" },
+      "note": {
+        "ja": "このテーブルで\n実際にさわれます",
+        "en": "You can try it\non this table."
+      }
+    }
+  }
+}
