@@ -2,6 +2,32 @@
   "version": 1,
   "apps": [
     {
+      "id": "tv",
+      "package": "vrc.ulexite.tv",
+      "kind": "core",
+      "official": true,
+      "author": "Ulexite",
+      "name": {
+        "ja": "Ulexite TV",
+        "en": "Ulexite TV"
+      },
+      "summary": {
+        "ja": "テレビ本体（シェル）。この上でアプリが動きます",
+        "en": "The TV itself (shell). Apps run on top of it."
+      },
+      "description": {
+        "ja": "テレビ本体（ランチャー・リモコン・アプリの実行）。ストアからは入れません（VCC のリスティングから入れます）。defaultApps は、この TV と一緒に入れたいアプリの id です。",
+        "en": "The TV itself (launcher, remote, app runtime). Not installed from the store (install it from the VCC listing). defaultApps lists the apps that should come with it."
+      },
+      "color": "#2a2e34",
+      "icon": "tv",
+      "quest": "yes",
+      "imageLoading": "none",
+      "minUlexite": "0.3.0",
+      "version": "0.3.0",
+      "defaultApps": ["clock"]
+    },
+    {
       "id": "clock",
       "package": "vrc.ulexite.app.clock",
       "official": true,

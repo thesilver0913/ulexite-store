@@ -22,6 +22,15 @@ Unity の「Ulexite 設定」ウィンドウのアプリストアがカタログ
 | `apps[].imageLoading` | 画像の読み込みの量の目安（`none`・`low`・`high`） |
 | `apps[].minUlexite` | 必要な Ulexite TV の版 |
 | `apps[].version` / `url` / `sha256` | 審査した版と、その zip の場所と SHA-256 |
+| `apps[].kind` | 省略＝アプリ。`core` は TV 本体の項目（ストアの一覧には出さない。本体が対応するまで） |
+| `apps[].defaultApps` | **TV の既定の組**（`kind: "core"` の項目だけ）。TV と一緒に入れたいアプリの `id` の並び |
+
+### TV の既定の組（`defaultApps`）
+
+- カタログの **TV の項目**（`id: "tv"`・`kind: "core"`・`package: "vrc.ulexite.tv"`）に `defaultApps` を書く。いまは `["clock"]`（天気がカタログに入ったら足す）
+- **TV はストアから入れません**（`url`・`sha256` を書かない。VCC のリスティングから入れる）。この項目は既定の組を配るためだけのもの
+- 本体は、この項目の `defaultApps` を見て「まだ入っていないアプリ」を入れる（本体の実装待ち。CHANGES 2026-10-22 23時55分）
+- `pack.py` はカタログを読み直して該当のアプリの項目だけを書き換えるので、`tv` の項目と `defaultApps` は消えません
 
 ## 製品の紹介（v1/products/）
 
