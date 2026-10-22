@@ -25,13 +25,15 @@
       "imageLoading": "none",
       "minUlexite": "0.3.0",
       "version": "0.3.0",
-      "defaultApps": ["clock"]
+      "defaultApps": [
+        "clock"
+      ]
     },
     {
       "id": "clock",
       "package": "vrc.ulexite.app.clock",
       "official": true,
-      "author": "Ulexite",
+      "author": "Ulexite Technologies",
       "name": {
         "ja": "時計",
         "en": "Clock"
@@ -53,9 +55,19 @@
       "quest": "yes",
       "imageLoading": "none",
       "minUlexite": "0.1.0",
-      "version": "0.1.2",
-      "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.clock-0.1.2/vrc.ulexite.app.clock-0.1.2.zip",
-      "sha256": "7730f02c3cd94c9cbcb665724c2fda2d5777e6db2afaf7ef927ea02164edbe60"
+      "version": "0.3.2",
+      "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.clock-0.3.2/vrc.ulexite.app.clock-0.3.2.zip",
+      "sha256": "7180fa20e459a01617fb725990d41c39d490b9c0d47220cda35d3fc3142ab2f5",
+      "os": 1,
+      "appServices": 3,
+      "profiles": [
+        "tv"
+      ],
+      "releaseNotes": {
+        "ja": "0.3.2：ホームのタイルをアプリ側で描くようにしました（`TileWidgetFillsTile`。時計の文字盤・目盛り・時針/分針・「時計」・次のアラーム／タイマーをタイル全面 240×135 に）。0.3.1：アラームの音をローカルのループ再生（テレビの位置から、その人の操作音の音量×補正、60秒で自動停止）。0.3.0：都市を設定へ、時差の表をサーバーから、アラームは標準時刻の設定。",
+        "en": "0.3.2: the home tile is drawn by the app (TileWidgetFillsTile): clock face, ticks, hour/minute hands, the app name and the next alarm / timer over the whole 240×135 tile. 0.3.1: the alarm uses local loop playback (from the TV, your volume × gain, stops after 60 s). 0.3.0: cities in settings, time zone table from the server, default alarm time."
+      },
+      "category": "tools"
     }
   ]
 }
