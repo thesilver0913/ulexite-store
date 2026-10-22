@@ -137,7 +137,7 @@
         "ja": "スマホで読み取るか、下の URL をブラウザで開いてください",
         "en": "Scan the code, or open the URL below in a browser."
       },
-      "url": { "ja": "[BOOTH / VCC のリスティングの URL]", "en": "[BOOTH / VCC listing URL]" },
+      "url": { "ja": "https://ulexite.booth.pm/items/9027626", "en": "https://ulexite.booth.pm/items/9027626" },
       "note": {
         "ja": "このテーブルで\n実際にさわれます",
         "en": "You can try it\non this table."
