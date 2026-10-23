@@ -24,6 +24,14 @@ Unity の「Ulexite 設定」ウィンドウのアプリストアがカタログ
 | `apps[].version` / `url` / `sha256` | 審査した版と、その zip の場所と SHA-256 |
 | `apps[].kind` | 省略＝アプリ。`core` は TV 本体の項目（ストアの一覧には出さない。本体が対応するまで） |
 | `apps[].defaultApps` | **TV の既定の組**（`kind: "core"` の項目だけ）。TV と一緒に入れたいアプリの `id` の並び |
+| `apps[].iconUrl` | アプリのアイコンの画像（`v1/icons/<id>.png`。白い線画・透明の背景）。Web では `color` の上に置く |
+
+### アプリのアイコン（`v1/icons/`）
+
+- 公式サイトのアプリカタログが **Web で出す**ためのもの。`apps[].iconUrl` に URL が入っている
+- **白い線画・透明の背景**（アプリの `Textures/icon_512.png` をそのまま写したもの。TV だけ 96px）。Web ではアプリの `color` の上に置く（白い地に置くと見えない）。色を変えたいときは CSS の `filter: brightness(0) invert(1)` などで
+- `pack.py` が、アプリを固めるときに `Textures/icon_512.png` を `v1/icons/<id>.png` に写して `iconUrl` を入れる（手で足さなくてよい）
+- `icon`（名前）は本体のストアの一覧が `UlexiteUiAssets` のアイコンを引くのに使う。名前と画像の両方がある
 
 ### TV の既定の組（`defaultApps`）
 

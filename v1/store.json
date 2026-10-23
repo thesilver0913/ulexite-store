@@ -27,7 +27,8 @@
       "version": "0.3.0",
       "defaultApps": [
         "clock"
-      ]
+      ],
+      "iconUrl": "https://thesilver0913.github.io/ulexite-store/v1/icons/tv.png"
     },
     {
       "id": "clock",
@@ -67,7 +68,8 @@
         "ja": "0.3.2：ホームのタイルをアプリ側で描くようにしました（`TileWidgetFillsTile`。時計の文字盤・目盛り・時針/分針・「時計」・次のアラーム／タイマーをタイル全面 240×135 に）。0.3.1：アラームの音をローカルのループ再生（テレビの位置から、その人の操作音の音量×補正、60秒で自動停止）。0.3.0：都市を設定へ、時差の表をサーバーから、アラームは標準時刻の設定。",
         "en": "0.3.2: the home tile is drawn by the app (TileWidgetFillsTile): clock face, ticks, hour/minute hands, the app name and the next alarm / timer over the whole 240×135 tile. 0.3.1: the alarm uses local loop playback (from the TV, your volume × gain, stops after 60 s). 0.3.0: cities in settings, time zone table from the server, default alarm time."
       },
-      "category": "tools"
+      "category": "tools",
+      "iconUrl": "https://thesilver0913.github.io/ulexite-store/v1/icons/clock.png"
     },
     {
       "id": "weather",
@@ -107,7 +109,8 @@
         "en": "0.2.0: map tab (rain, temperature, warnings, intensity and tsunami layers over the OS Japan map base). Home tile per the design (app, place, temperature, weather, high/low). The first place follows the TV region. English for weather text, warning names, epicenters, areas and moon names. Heading for the coming moon."
       },
       "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.weather-0.2.0/vrc.ulexite.app.weather-0.2.0.zip",
-      "sha256": "457984abb9e820c13d0e2819607da2e9f29a9b63936b0234b96340d3da672a39"
+      "sha256": "457984abb9e820c13d0e2819607da2e9f29a9b63936b0234b96340d3da672a39",
+      "iconUrl": "https://thesilver0913.github.io/ulexite-store/v1/icons/weather.png"
     },
     {
       "id": "metar",
@@ -131,7 +134,7 @@
         "en": "Data: NOAA Aviation Weather Center"
       },
       "color": "#33404d",
-      "icon": "info",
+      "icon": "metar",
       "quest": "check",
       "imageLoading": "none",
       "minUlexite": "0.3.0",
@@ -147,7 +150,8 @@
       },
       "category": "info",
       "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.metar-0.2.0/vrc.ulexite.app.metar-0.2.0.zip",
-      "sha256": "2bbb341cacb6958dfbd2384b04fe840a6b9ed890072ccb7559469b753b7b2512"
+      "sha256": "2bbb341cacb6958dfbd2384b04fe840a6b9ed890072ccb7559469b753b7b2512",
+      "iconUrl": "https://thesilver0913.github.io/ulexite-store/v1/icons/metar.png"
     }
   ]
 }

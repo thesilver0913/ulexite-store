@@ -8,12 +8,14 @@
 zip の中身はパッケージのフォルダの中身そのもの（package.json が zip の直下。VPM と同じ形）。
 できた zip は GitHub の Releases に「<パッケージ名>-<バージョン>」のタグで上げる（URL はそれを前提に書く）。
 """
-import argparse, hashlib, json, os, re, sys, zipfile
+import argparse, hashlib, json, os, re, shutil, sys, zipfile
 from collections import OrderedDict
 
 REPO = "thesilver0913/ulexite-store"
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "v1", "store.json")
+ICONS = os.path.join(ROOT, "v1", "icons")
+ICON_BASE = "https://thesilver0913.github.io/ulexite-store/v1/icons/"
 
 
 def check_compiled(src):
@@ -94,6 +96,15 @@ def main():
     entry["version"] = version
     entry["url"] = f"https://github.com/{REPO}/releases/download/{name}-{version}/{os.path.basename(zip_path)}"
     entry["sha256"] = sha
+    # アプリのタイルの絵（白い線画・透明の背景）を v1/icons/<id>.png に置き、カタログに iconUrl を入れる
+    # （公式サイトのアプリカタログが Web で出すため。本体のストアは icon の名前を使う）
+    icon_src = os.path.join(a.package, "Textures", "icon_512.png")
+    if os.path.exists(icon_src):
+        os.makedirs(ICONS, exist_ok=True)
+        shutil.copyfile(icon_src, os.path.join(ICONS, cert["id"] + ".png"))
+        entry["iconUrl"] = ICON_BASE + cert["id"] + ".png"
+    else:
+        print(f"注意：{icon_src} が無いので、アイコンは書き出していません")
     json.dump(catalog, open(CATALOG, "w", encoding="utf-8", newline="\n"), ensure_ascii=False, indent=2)
     print(zip_path)
     print(sha)
