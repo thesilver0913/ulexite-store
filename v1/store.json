@@ -130,9 +130,9 @@
         "ja": "データ：NOAA Aviation Weather Center",
         "en": "Data: NOAA Aviation Weather Center"
       },
-      "color": "#2b3a52",
+      "color": "#33404d",
       "icon": "info",
-      "quest": "yes",
+      "quest": "check",
       "imageLoading": "none",
       "minUlexite": "0.3.0",
       "version": "0.2.0",
