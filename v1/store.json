@@ -97,7 +97,7 @@
       "quest": "check",
       "imageLoading": "high",
       "minUlexite": "0.3.0",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "os": 1,
       "appServices": 4,
       "profiles": [
@@ -105,11 +105,11 @@
       ],
       "category": "info",
       "releaseNotes": {
-        "ja": "0.2.0：地図タブ（雨雲・気温・警報／注意報・震度・津波の5つを切り替え。下地は OS の日本地図）。ホームのタイルをデザインどおりに（天気・地点・気温・天気・最高最低）。地点の初期値がテレビの地域（設定の地域）に追従。英語の出し分け（天気の文・警報の名前・震源地・地域・月の名前）。「これからの月」の見出し。",
-        "en": "0.2.0: map tab (rain, temperature, warnings, intensity and tsunami layers over the OS Japan map base). Home tile per the design (app, place, temperature, weather, high/low). The first place follows the TV region. English for weather text, warning names, epicenters, areas and moon names. Heading for the coming moon."
+        "ja": "0.2.1：地図タブに、選んでいる地点の印（赤い点）を出しました。0.2.0：地図タブ（雨雲・気温・警報／注意報・震度・津波の5つを切り替え。下地は OS の日本地図）。ホームのタイルをデザインどおりに（天気・地点・気温・天気・最高最低）。地点の初期値がテレビの地域（設定の地域）に追従。英語の出し分け（天気の文・警報の名前・震源地・地域・月の名前）。「これからの月」の見出し。",
+        "en": "0.2.1: the map tab marks the chosen place with a red dot. 0.2.0: map tab (rain, temperature, warnings, intensity and tsunami layers over the OS Japan map base). Home tile per the design (app, place, temperature, weather, high/low). The first place follows the TV region. English for weather text, warning names, epicenters, areas and moon names. Heading for the coming moon."
       },
-      "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.weather-0.2.0/vrc.ulexite.app.weather-0.2.0.zip",
-      "sha256": "457984abb9e820c13d0e2819607da2e9f29a9b63936b0234b96340d3da672a39",
+      "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.weather-0.2.1/vrc.ulexite.app.weather-0.2.1.zip",
+      "sha256": "35f6c59170ed967b3c909e378cb5f6098d59a4e7bc3d6fb53ff60b62eaa1d5ba",
       "iconUrl": "https://thesilver0913.github.io/ulexite-store/v1/icons/weather.png"
     },
     {
