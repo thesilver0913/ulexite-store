@@ -68,6 +68,46 @@
         "en": "0.3.2: the home tile is drawn by the app (TileWidgetFillsTile): clock face, ticks, hour/minute hands, the app name and the next alarm / timer over the whole 240×135 tile. 0.3.1: the alarm uses local loop playback (from the TV, your volume × gain, stops after 60 s). 0.3.0: cities in settings, time zone table from the server, default alarm time."
       },
       "category": "tools"
+    },
+    {
+      "id": "weather",
+      "package": "vrc.ulexite.app.weather",
+      "official": true,
+      "author": "Ulexite Technologies",
+      "name": {
+        "ja": "天気",
+        "en": "Weather"
+      },
+      "summary": {
+        "ja": "予報・警報、月、地震、雨雲の地図",
+        "en": "Forecast, warnings, moon, quakes and a weather map"
+      },
+      "description": {
+        "ja": "気象庁の予報（今日から7日分）と警報・注意報、月の満ち欠けと日の出入り、最近の地震の一覧、雨雲・気温・警報・震度・津波を重ねる日本地図。地点は3つまで、テレビを見ている全員で共有できます。ホームのタイルに今の気温を出します。",
+        "en": "JMA forecasts for the next seven days with warnings and advisories, moon phase with sunrise and sunset, recent earthquakes, and a map of Japan with rain, temperature, warnings, intensity and tsunami layers. Up to three places, shared by everyone watching. The home tile shows the current temperature."
+      },
+      "credits": {
+        "ja": "出典：気象庁ホームページ（予報・警報・地震）。地図の下地：Natural Earth",
+        "en": "Source: Japan Meteorological Agency. Map base: Natural Earth"
+      },
+      "color": "#2b3a52",
+      "icon": "sun",
+      "quest": "check",
+      "imageLoading": "high",
+      "minUlexite": "0.3.0",
+      "version": "0.2.0",
+      "os": 1,
+      "appServices": 4,
+      "profiles": [
+        "tv"
+      ],
+      "category": "info",
+      "releaseNotes": {
+        "ja": "0.2.0：地図タブ（雨雲・気温・警報／注意報・震度・津波の5つを切り替え。下地は OS の日本地図）。ホームのタイルをデザインどおりに（天気・地点・気温・天気・最高最低）。地点の初期値がテレビの地域（設定の地域）に追従。英語の出し分け（天気の文・警報の名前・震源地・地域・月の名前）。「これからの月」の見出し。",
+        "en": "0.2.0: map tab (rain, temperature, warnings, intensity and tsunami layers over the OS Japan map base). Home tile per the design (app, place, temperature, weather, high/low). The first place follows the TV region. English for weather text, warning names, epicenters, areas and moon names. Heading for the coming moon."
+      },
+      "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.weather-0.2.0/vrc.ulexite.app.weather-0.2.0.zip",
+      "sha256": "457984abb9e820c13d0e2819607da2e9f29a9b63936b0234b96340d3da672a39"
     }
   ]
 }
