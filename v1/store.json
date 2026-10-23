@@ -108,6 +108,46 @@
       },
       "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.weather-0.2.0/vrc.ulexite.app.weather-0.2.0.zip",
       "sha256": "457984abb9e820c13d0e2819607da2e9f29a9b63936b0234b96340d3da672a39"
+    },
+    {
+      "id": "metar",
+      "package": "vrc.ulexite.app.metar",
+      "official": true,
+      "author": "Ulexite Technologies",
+      "name": {
+        "ja": "METAR",
+        "en": "METAR"
+      },
+      "summary": {
+        "ja": "航空気象（METAR・TAF）",
+        "en": "Aviation weather (METAR and TAF)"
+      },
+      "description": {
+        "ja": "日本の主要38空港の航空気象。空港を選ぶと、風・視程・雲・気温／露点・気圧・天気と、電文（METAR）・TAF を出します。飛行区分（VFR・MVFR・IFR・LIFR）は色の点と札で表示。実際の運航には使わないでください。",
+        "en": "Aviation weather for 38 major Japanese airports. Pick an airport to see wind, visibility, clouds, temperature and dew point, pressure, weather, the raw report and the TAF. The flight category (VFR, MVFR, IFR, LIFR) is shown as a coloured dot and badge. Not for operational use."
+      },
+      "credits": {
+        "ja": "データ：NOAA Aviation Weather Center",
+        "en": "Data: NOAA Aviation Weather Center"
+      },
+      "color": "#2b3a52",
+      "icon": "info",
+      "quest": "yes",
+      "imageLoading": "none",
+      "minUlexite": "0.3.0",
+      "version": "0.2.0",
+      "os": 1,
+      "appServices": 2,
+      "profiles": [
+        "tv"
+      ],
+      "releaseNotes": {
+        "ja": "0.2.0：英語表示（空港名・風向・視程・雲・天気を英語に切り替え）。風は VRB（風向不定）や突風もそのまま出る。TAF のない空港では TAF の箱を出さない。天気のないときは「現象なし」、雲のないときは「雲なし」。下の出典の行に、配信の更新時刻と「10分ほど遅れることがあります」を出す。一覧の空港名の欄を広げ、ICAO を右端にそろえた。",
+        "en": "0.2.0: English for airport names, wind, visibility, clouds, weather and the TAF label. Wind shows variable directions (VRB) and gusts. The TAF box is hidden when an airport has no TAF, with \"No significant weather\" and \"No cloud\" when there is none. The footer shows when the data was updated and that it may be up to 10 minutes behind. Wider airport name column with the ICAO code at the right edge."
+      },
+      "category": "info",
+      "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.metar-0.2.0/vrc.ulexite.app.metar-0.2.0.zip",
+      "sha256": "2bbb341cacb6958dfbd2384b04fe840a6b9ed890072ccb7559469b753b7b2512"
     }
   ]
 }
