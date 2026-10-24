@@ -24,9 +24,10 @@
       "quest": "yes",
       "imageLoading": "none",
       "minUlexite": "0.3.0",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "defaultApps": [
-        "clock"
+        "clock",
+        "weather"
       ],
       "iconUrl": "https://thesilver0913.github.io/ulexite-store/v1/icons/tv.png"
     },
