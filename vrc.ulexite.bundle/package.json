@@ -1,0 +1,23 @@
+{
+  "name": "vrc.ulexite.bundle",
+  "displayName": "Ulexite TV（まとめて入れる）",
+  "version": "0.4.0",
+  "unity": "2022.3",
+  "description": "Ulexite TV と、最初から入る6つのアプリ（動画・URLプレイヤー・VRC放送局・ライブラリ・時計・天気）をまとめて入れるためのパッケージ。中身は空で、依存だけを持ちます",
+  "license": "SEE LICENSE IN LICENSE_ja.pdf",
+  "vrchatVersion": "2022.1.1",
+  "documentationUrl": "https://thesilver0913.github.io/ulexite-catalog/",
+  "vpmDependencies": {
+    "vrc.ulexite.tv": ">=0.4.0",
+    "vrc.ulexite.app.video": ">=0.1.0",
+    "vrc.ulexite.app.urlplayer": ">=0.1.0",
+    "vrc.ulexite.app.vrctv": ">=0.1.0",
+    "vrc.ulexite.app.library": ">=0.1.1",
+    "vrc.ulexite.app.clock": ">=0.3.4",
+    "vrc.ulexite.app.weather": ">=0.2.1"
+  },
+  "author": {
+    "name": "葛城ひなた",
+    "url": "https://x.com/UlexiteOfficial"
+  }
+}

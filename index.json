@@ -148,7 +148,34 @@
             "idv.jlchntoz.vvmw": "1.8.x >=1.8.2"
           },
           "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.tv-0.4.0/vrc.ulexite.tv-0.4.0.zip",
-          "zipSHA256": "27cb1bde1881c5a3f5f3ea4d7607b9835d4957d6211f236e5baf68ca6c17bf35",
+          "zipSHA256": "f54baa2abb2a978291779f30e9d9e86184dbd3aec7d46e09df02554e17706281",
+          "hideInEditor": false
+        }
+      }
+    },
+    "vrc.ulexite.bundle": {
+      "versions": {
+        "0.4.0": {
+          "name": "vrc.ulexite.bundle",
+          "displayName": "Ulexite TV（まとめて入れる）",
+          "version": "0.4.0",
+          "unity": "2022.3",
+          "description": "Ulexite TV と、最初から入る6つのアプリ（動画・URLプレイヤー・VRC放送局・ライブラリ・時計・天気）をまとめて入れるためのパッケージ。中身は空で、依存だけを持ちます",
+          "author": {
+            "name": "葛城ひなた",
+            "url": "https://x.com/UlexiteOfficial"
+          },
+          "vpmDependencies": {
+            "vrc.ulexite.tv": ">=0.4.0",
+            "vrc.ulexite.app.video": ">=0.1.0",
+            "vrc.ulexite.app.urlplayer": ">=0.1.0",
+            "vrc.ulexite.app.vrctv": ">=0.1.0",
+            "vrc.ulexite.app.library": ">=0.1.1",
+            "vrc.ulexite.app.clock": ">=0.3.4",
+            "vrc.ulexite.app.weather": ">=0.2.1"
+          },
+          "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.bundle-0.4.0/vrc.ulexite.bundle-0.4.0.zip",
+          "zipSHA256": "c911226a6d7be650128660adfb20a592bb20968f8d8d057c83fcf1e214216f14",
           "hideInEditor": false
         }
       }
