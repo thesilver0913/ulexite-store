@@ -66,8 +66,8 @@
         "tv"
       ],
       "releaseNotes": {
-        "ja": "0.3.4：ホームのタイルを、余白のある圧縮した配置にしました（文字盤56・大きい時刻42px・次のアラーム・左下に日付・右下に「時計」。tile.json の部品で、時刻・日付・名前はアプリが書き換え）。0.3.3：タイルを tile.json（共通の parts）から組む・言語対応・文字盤の大きさを w/h で。",
-        "en": "0.3.4: a compressed home tile with margins (face 56, big 42px time, next alarm, date at the bottom left, app name at the bottom right; tile.json parts, the app rewrites the time/date/name). 0.3.3: tile built from tile.json (shared parts), language-aware, face size follows w/h."
+        "ja": "- ホームのタイルを圧縮配置に（文字盤56・42pxの時刻）\n- タイルに次のアラーム・日付・アプリ名\n- タイルを tile.json の部品から生成\n- タイルの文字を言語に対応\n- 都市とアラームの設定を「設定」に\n- 時差の表をサーバーから取得\n- アラーム音をローカルのループ再生に",
+        "en": "- Compressed home tile (face 56, 42px time)\n- Next alarm, date and app name on the tile\n- Tile built from tile.json parts\n- Tile text follows the language\n- Cities and alarm in Settings\n- Time zone table from the server\n- Alarm sound with local loop playback"
       },
       "category": "tools",
       "iconUrl": "https://thesilver0913.github.io/ulexite-store/v1/icons/clock.png"
@@ -106,8 +106,8 @@
       ],
       "category": "info",
       "releaseNotes": {
-        "ja": "0.2.1：地図タブに、選んでいる地点の印（赤い点）を出しました。0.2.0：地図タブ（雨雲・気温・警報／注意報・震度・津波の5つを切り替え。下地は OS の日本地図）。ホームのタイルをデザインどおりに（天気・地点・気温・天気・最高最低）。地点の初期値がテレビの地域（設定の地域）に追従。英語の出し分け（天気の文・警報の名前・震源地・地域・月の名前）。「これからの月」の見出し。",
-        "en": "0.2.1: the map tab marks the chosen place with a red dot. 0.2.0: map tab (rain, temperature, warnings, intensity and tsunami layers over the OS Japan map base). Home tile per the design (app, place, temperature, weather, high/low). The first place follows the TV region. English for weather text, warning names, epicenters, areas and moon names. Heading for the coming moon."
+        "ja": "- 地図タブに、選んでいる地点の印（赤い点）\n- 地点を変えると、地図の印も動く",
+        "en": "- The map tab marks the chosen place with a red dot\n- The dot follows the place you choose"
       },
       "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.weather-0.2.1/vrc.ulexite.app.weather-0.2.1.zip",
       "sha256": "35f6c59170ed967b3c909e378cb5f6098d59a4e7bc3d6fb53ff60b62eaa1d5ba",
@@ -146,8 +146,8 @@
         "tv"
       ],
       "releaseNotes": {
-        "ja": "0.2.0：英語表示（空港名・風向・視程・雲・天気を英語に切り替え）。風は VRB（風向不定）や突風もそのまま出る。TAF のない空港では TAF の箱を出さない。天気のないときは「現象なし」、雲のないときは「雲なし」。下の出典の行に、配信の更新時刻と「10分ほど遅れることがあります」を出す。一覧の空港名の欄を広げ、ICAO を右端にそろえた。",
-        "en": "0.2.0: English for airport names, wind, visibility, clouds, weather and the TAF label. Wind shows variable directions (VRB) and gusts. The TAF box is hidden when an airport has no TAF, with \"No significant weather\" and \"No cloud\" when there is none. The footer shows when the data was updated and that it may be up to 10 minutes behind. Wider airport name column with the ICAO code at the right edge."
+        "ja": "- 一覧の縦スクロール（38空港すべて）\n- 英語表示（空港名・風・視程・雲・天気）\n- 風の VRB（風向不定）と突風\n- 天気なし「現象なし」・雲なし「雲なし」\n- TAF のない空港は TAF を出さない\n- 長い電文（METAR・TAF）の2行折り返し\n- 一覧の空港名を広く・ICAO を右端に\n- 出典の行に更新時刻と遅れの注意",
+        "en": "- Scrolling list with all 38 airports\n- English for airport names, wind, visibility, clouds and weather\n- VRB (variable) wind and gusts\n- \"No significant weather\" and \"No cloud\" when there is none\n- No TAF box when an airport has no TAF\n- Long METAR/TAF reports wrap to two lines\n- Wider airport name column, ICAO at the right edge\n- Update time and delay note in the footer"
       },
       "category": "info",
       "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.metar-0.2.0/vrc.ulexite.app.metar-0.2.0.zip",
