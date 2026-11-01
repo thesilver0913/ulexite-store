@@ -130,6 +130,28 @@
           "hideInEditor": false
         }
       }
+    },
+    "vrc.ulexite.tv": {
+      "versions": {
+        "0.4.0": {
+          "name": "vrc.ulexite.tv",
+          "displayName": "Ulexite TV",
+          "version": "0.4.0",
+          "unity": "2022.3",
+          "description": "VRChat ワールド向けのテレビ（セットトップボックス）。リモコンで操作する 10 フィート UI とアプリ。ベータ版",
+          "author": {
+            "name": "葛城ひなた",
+            "url": "https://x.com/k_hinata_vrc"
+          },
+          "vpmDependencies": {
+            "com.vrchat.worlds": "3.x.x >=3.10.5",
+            "idv.jlchntoz.vvmw": "1.8.x >=1.8.2"
+          },
+          "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.tv-0.4.0/vrc.ulexite.tv-0.4.0.zip",
+          "zipSHA256": "27cb1bde1881c5a3f5f3ea4d7607b9835d4957d6211f236e5baf68ca6c17bf35",
+          "hideInEditor": false
+        }
+      }
     }
   }
 }
