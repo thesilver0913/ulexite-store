@@ -1,0 +1,135 @@
+{
+  "name": "Ulexite",
+  "id": "io.github.thesilver0913.ulexite",
+  "url": "https://thesilver0913.github.io/ulexite-store/index.json",
+  "author": "葛城ひなた",
+  "description": "VRChat ワールド向けのテレビ「Ulexite TV」と、公式アプリのパッケージです（ベータ版）。",
+  "packages": {
+    "vrc.ulexite.app.video": {
+      "versions": {
+        "0.1.0": {
+          "name": "vrc.ulexite.app.video",
+          "displayName": "Ulexite 動画",
+          "version": "0.1.0",
+          "unity": "2022.3",
+          "description": "動画アプリ（最初から入るアプリ）",
+          "author": {
+            "name": "葛城ひなた",
+            "url": "https://x.com/k_hinata_vrc"
+          },
+          "vpmDependencies": {
+            "vrc.ulexite.tv": ">=0.1.0"
+          },
+          "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.video-0.1.0/vrc.ulexite.app.video-0.1.0.zip",
+          "zipSHA256": "fd55a40bea41add340592b14ca55a1b8381dc6a86b1bf10dea1577a7bfb04afa",
+          "hideInEditor": false
+        }
+      }
+    },
+    "vrc.ulexite.app.urlplayer": {
+      "versions": {
+        "0.1.0": {
+          "name": "vrc.ulexite.app.urlplayer",
+          "displayName": "Ulexite URL プレイヤー",
+          "version": "0.1.0",
+          "unity": "2022.3",
+          "description": "URL を貼って再生（最初から入るアプリ）",
+          "author": {
+            "name": "葛城ひなた",
+            "url": "https://x.com/k_hinata_vrc"
+          },
+          "vpmDependencies": {
+            "vrc.ulexite.tv": ">=0.1.0"
+          },
+          "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.urlplayer-0.1.0/vrc.ulexite.app.urlplayer-0.1.0.zip",
+          "zipSHA256": "564fd412ee93047c20b29651568cde0fd4bfcb6b767849f11bf1cd70d4b160c7",
+          "hideInEditor": false
+        }
+      }
+    },
+    "vrc.ulexite.app.vrctv": {
+      "versions": {
+        "0.1.0": {
+          "name": "vrc.ulexite.app.vrctv",
+          "displayName": "Ulexite VRC 放送局",
+          "version": "0.1.0",
+          "unity": "2022.3",
+          "description": "VRC放送局の視聴と番組表（最初から入るアプリ）",
+          "author": {
+            "name": "葛城ひなた",
+            "url": "https://x.com/k_hinata_vrc"
+          },
+          "vpmDependencies": {
+            "vrc.ulexite.tv": ">=0.1.0"
+          },
+          "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.vrctv-0.1.0/vrc.ulexite.app.vrctv-0.1.0.zip",
+          "zipSHA256": "3a7472bd05512dba8a0766044ad713bb65d08f2b38fb8730dec626f63377887f",
+          "hideInEditor": false
+        }
+      }
+    },
+    "vrc.ulexite.app.library": {
+      "versions": {
+        "0.1.1": {
+          "name": "vrc.ulexite.app.library",
+          "displayName": "Ulexite ライブラリ",
+          "version": "0.1.1",
+          "unity": "2022.3",
+          "description": "制作者が登録した動画と画像（最初から入るアプリ）",
+          "author": {
+            "name": "葛城ひなた",
+            "url": "https://x.com/k_hinata_vrc"
+          },
+          "vpmDependencies": {
+            "vrc.ulexite.tv": ">=0.1.0"
+          },
+          "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.library-0.1.1/vrc.ulexite.app.library-0.1.1.zip",
+          "zipSHA256": "323e648ac77eadb0026b1be01ef095ef29034f1c63d8853836c825a5af9e70a7",
+          "hideInEditor": false
+        }
+      }
+    },
+    "vrc.ulexite.app.clock": {
+      "versions": {
+        "0.3.4": {
+          "name": "vrc.ulexite.app.clock",
+          "displayName": "Ulexite 時計",
+          "version": "0.3.4",
+          "unity": "2022.3",
+          "description": "世界時計・アラーム・タイマー・ストップウォッチ（最初から入るアプリ）",
+          "author": {
+            "name": "葛城ひなた",
+            "url": "https://x.com/k_hinata_vrc"
+          },
+          "vpmDependencies": {
+            "vrc.ulexite.tv": ">=0.1.0"
+          },
+          "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.clock-0.3.4/vrc.ulexite.app.clock-0.3.4.zip",
+          "zipSHA256": "587995405712e80223b049c638c6e46bfb7d14d03c385ff07e40ae5e7d0dbb6d",
+          "hideInEditor": false
+        }
+      }
+    },
+    "vrc.ulexite.app.weather": {
+      "versions": {
+        "0.2.1": {
+          "name": "vrc.ulexite.app.weather",
+          "displayName": "Ulexite 天気",
+          "version": "0.2.1",
+          "unity": "2022.3",
+          "description": "気象庁の予報・月・地震・地図（最初から入るアプリ）",
+          "author": {
+            "name": "葛城ひなた",
+            "url": "https://x.com/k_hinata_vrc"
+          },
+          "vpmDependencies": {
+            "vrc.ulexite.tv": ">=0.3.0"
+          },
+          "url": "https://github.com/thesilver0913/ulexite-store/releases/download/vrc.ulexite.app.weather-0.2.1/vrc.ulexite.app.weather-0.2.1.zip",
+          "zipSHA256": "35f6c59170ed967b3c909e378cb5f6098d59a4e7bc3d6fb53ff60b62eaa1d5ba",
+          "hideInEditor": false
+        }
+      }
+    }
+  }
+}

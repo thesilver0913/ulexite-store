@@ -35,10 +35,21 @@ Unity の「Ulexite 設定」ウィンドウのアプリストアがカタログ
 
 ### TV の既定の組（`defaultApps`）
 
-- カタログの **TV の項目**（`id: "tv"`・`kind: "core"`・`package: "vrc.ulexite.tv"`）に `defaultApps` を書く。いまは `["clock"]`（天気がカタログに入ったら足す）
+- カタログの **TV の項目**（`id: "tv"`・`kind: "core"`・`package: "vrc.ulexite.tv"`）に `defaultApps` を書く。いまは `["clock", "weather"]`
 - **TV はストアから入れません**（`url`・`sha256` を書かない。VCC のリスティングから入れる）。この項目は既定の組を配るためだけのもの
 - 本体は、この項目の `defaultApps` を見て「まだ入っていないアプリ」を入れる（本体の実装待ち。CHANGES 2026-10-22 23時55分）
 - `pack.py` はカタログを読み直して該当のアプリの項目だけを書き換えるので、`tv` の項目と `defaultApps` は消えません
+
+## VCC のリスティング（`index.json`）
+
+VPM（VCC）から入れられる形のリスティング。**TV と公式アプリのバンドル**を配る。
+
+- URL：`https://thesilver0913.github.io/ulexite-store/index.json`
+- 「Add to VCC」の URL：`vcc://vpm/addRepo?url=` ＋ 上の URL を URL エンコードしたもの
+- **載せる**：`python tools/vpm.py <パッケージのフォルダ>`。zip を作り（`pack.py` と同じ形・同じ中身なら同じ zip）、Releases に上げるコマンドを出し、`index.json` のその版を `url`・`zipSHA256` 付きで書き換える。`ulexite-app.json` の無い **TV 本体**にも使える
+- **載っているもの**：TV 本体（`vrc.ulexite.tv`）と、動画・URLプレイヤー・VRC放送局・ライブラリ・時計・天気（各 1 版）
+- **TV を固めるときの注意**：`pack.py` の `check_compiled` が、U# のプログラムアセット（`.asset`）より新しい `.cs` を見つけると止める。**Unity で開いてコンパイルしてから**固める（古いままだと、入れた先でアプリが止まる）
+- パッケージの表示名・説明は `docs/guide/publish-0.4.0.md` の表にそろえる（`package.json` の `displayName`・`description`）
 
 ## 製品の紹介（v1/products/）
 
